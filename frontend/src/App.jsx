@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Admin/Login";
 import Register from "./pages/Admin/Register";
 import Admin from "./pages/Admin/Admin";
@@ -35,10 +35,10 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="*" element={<NotFound />}></Route>
-            <Route path="services" element={<Services />}></Route>
-            <Route path="aboutUs" element={<AboutUs />}></Route>
-            <Route path="products" element={<Products />}></Route>
-            <Route path="product_details" element={<Product_details />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/aboutUs" element={<AboutUs />}></Route>
+            <Route path="/products" element={<Products />}></Route>
+            <Route path="/product_details" element={<Product_details />}></Route>
           </Route>
 
           <Route

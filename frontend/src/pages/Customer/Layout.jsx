@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, Route, Routes } from "react-router-dom";
 import React from "react";
 import '../../styles/App.css';
 import logo from "../../assets/logo.png"
@@ -49,10 +49,7 @@ function Layout(){
                     </div>
                 </div>
             </nav>
-
-            <Outlet/>
-
-
+        <Outlet />
         </body>
 
     )
