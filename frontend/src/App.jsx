@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Admin/Login";
 import Register from "./pages/Admin/Register";
 import Admin from "./pages/Admin/Admin";
@@ -31,7 +31,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Switch>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -80,7 +79,6 @@ function App() {
           <Route path="/register" element={<RegisterAndLogout />} />
 
         </Routes>
-        </Switch>
       </BrowserRouter>
     </>
   );
