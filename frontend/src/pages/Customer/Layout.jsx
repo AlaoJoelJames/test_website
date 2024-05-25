@@ -3,6 +3,7 @@ import React from "react";
 import '../../styles/App.css';
 import logo from "../../assets/logo.png"
 import { sendMessage } from '../../components/sendMessage';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
 
@@ -50,7 +51,14 @@ function Layout(){
                 </div>
             </nav>
 
-            <Outlet/>
+            <Routes>
+            <Route index element={<Home />} />
+            <Route path="services" element={<Services />} />
+            <Route path="aboutUs" element={<AboutUs />} />
+            <Route path="products" element={<Products />} />
+            <Route path="product_details" element={<Product_details />} />
+            <Route path="*" element={<NotFound />} />
+            </Routes>
 
 
         </body>

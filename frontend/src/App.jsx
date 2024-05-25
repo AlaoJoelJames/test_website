@@ -31,55 +31,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="*" element={<NotFound />}></Route>
-            <Route path="/services" element={<Services />}></Route>
-            <Route path="/aboutUs" element={<AboutUs />}></Route>
-            <Route path="/products" element={<Products />}></Route>
-            <Route path="/product_details" element={<Product_details />}></Route>
-          </Route>
-
-          <Route
-            path="/admin"
-            element={
-              <ProtectedRoute>
-                <Admin />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/productadmin"
-            element={
-              <ProtectedRoute>
-                <ProductsAdmin />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/serviceadmin"
-            element={
-              <ProtectedRoute>
-                <ServiceAdmin />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/footeradmin"
-            element={
-              <ProtectedRoute>
-                <FooterAdmin />
-              </ProtectedRoute>
-            }
-          />
-
-          <Route path="/login" element={<Login />} />
-          <Route path="/logout" element={<Logout />} />
-          <Route path="/register" element={<RegisterAndLogout />} />
-
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
+        <Route path="/productadmin" element={<ProtectedRoute><ProductsAdmin /></ProtectedRoute>} />
+        <Route path="/serviceadmin" element={<ProtectedRoute><ServiceAdmin /></ProtectedRoute>} />
+        <Route path="/footeradmin" element={<ProtectedRoute><FooterAdmin /></ProtectedRoute>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/register" element={<RegisterAndLogout />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
