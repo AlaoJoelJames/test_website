@@ -101,11 +101,11 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydatabase',
-        'USER': 'myuser',
-        'PASSWORD': 'mypassword',
-        'HOST': 'db',  # This should match the service name in your Docker Compose file
-        'PORT': '3306',  # MariaDB default port
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_nxpMCDHsFkKrkWLMyVm',
+        'HOST': 'mysql-e6a40deb-f980-4b63-9806-c074948fa01e-orohiq1815194617-cho.i.aivencloud.com',  # This should match the service name in your Docker Compose file
+        'PORT': '26650',  # MariaDB default port
         'connect_timeout': 30,
         'read_timeout': 30,
         'write_timeout': 30,
