@@ -8,5 +8,4 @@ pytz
 sqlparse
 psycopg2-binary
 python-dotenv
-mysqlclient==2.1.0
 Pillow
