@@ -1,6 +1,4 @@
 FROM node:alpine
-FROM --platform=linux/arm64 node:16
-
 
 WORKDIR /app
 
