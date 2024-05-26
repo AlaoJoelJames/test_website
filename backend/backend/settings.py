@@ -32,7 +32,7 @@ else:
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-nma=xi6x2p-crjg^ifqqkapyu1qjd0l=+wn)-rijk_o%$!k3w_"
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -106,11 +106,11 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv("DB_NAME"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PWD"),
+        'NAME': "defaultdb",
+        'USER': "avnadmin",
+        'PASSWORD': "AVNS_J0nFtxWBnBeqksvKg58",
         'HOST': "mysql-37e5e60e-c7da-489a-b574-f193da13d522-db981583389-choreo-o.i.aivencloud.com",  # This should match the service name in your Docker Compose file
-        'PORT': os.getenv("DB_PORT"),  # MariaDB default port
+        'PORT': "17407",  # MariaDB default port
         'connect_timeout': 30,
         'read_timeout': 30,
         'write_timeout': 30,
