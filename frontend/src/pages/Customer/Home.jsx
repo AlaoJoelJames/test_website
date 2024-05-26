@@ -14,7 +14,7 @@ function Home(){
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/products/')
+        axios.get('https://test-website-1-4oqd.onrender.com/api/products')
         .then(response => {
             setProducts(response.data);
         })

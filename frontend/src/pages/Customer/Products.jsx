@@ -16,7 +16,7 @@ function Products() {
     const [selectedCategory, setSelectedCategory] = useState('');
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/products/')
+        axios.get('https://test-website-1-4oqd.onrender.com/api/products')
         .then(response => {
             setProducts(response.data);
         })
