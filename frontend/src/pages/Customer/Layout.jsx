@@ -16,7 +16,7 @@ function Layout(){
       };
 
     return(
-        <body>
+        <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary shadow sticky-top fw-bold py-3">
                 <div class="container-fluid d-flex flex">
                     <Link to='/' class="navbar-brand" href="#">
@@ -50,8 +50,7 @@ function Layout(){
                 </div>
             </nav>
         <Outlet />
-        </body>
-
+        </div>
     )
 }
 

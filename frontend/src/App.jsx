@@ -32,14 +32,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="*" element={<NotFound />}></Route>
-            <Route path="/services" element={<Services />}></Route>
-            <Route path="/aboutUs" element={<AboutUs />}></Route>
-            <Route path="/products" element={<Products />}></Route>
-            <Route path="/product_details" element={<Product_details />}></Route>
-          </Route>
+        <Route path="/" element={<Home />}/>
+        <Route path="aboutUs" element={<AboutUs />} />
+        <Route path="services" element={<Services />} />
+        <Route path="products" element={<Products />} />
+        <Route path="product_details" element={<Product_details />} />
+        <Route path="*" element={<NotFound />} />
 
           <Route
             path="/admin"

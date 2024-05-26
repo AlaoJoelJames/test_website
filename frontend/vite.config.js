@@ -3,13 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000,
-    watch: {
-      usePolling: true,
-    }
-  },
+  base: '/',
   build: {
-    outDir: 'dist' // Ensure Vercel serves the correct directory
-  }
+    outDir: 'dist',
+  },
+  server: {
+    historyApiFallback: true,
+  },
 });

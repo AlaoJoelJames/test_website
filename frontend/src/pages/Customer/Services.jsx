@@ -1,13 +1,14 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../../components/Footer";
-
+import Layout from "./Layout";
 
 
 function Services(){
 
     return(
         <>
+        <Layout></Layout>
             <div className="container my-5">
                 <div className="row">
                     <div className="col-lg-6 left pt-lg-5">

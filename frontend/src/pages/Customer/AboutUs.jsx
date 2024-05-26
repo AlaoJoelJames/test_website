@@ -1,13 +1,14 @@
 import React from "react";
 import '../../styles/Aboutus.css';
 import Footer from "../../components/Footer";
-
+import Layout from "./Layout";
 
 
 function AboutUs(){
 
     return(
         <>
+        <Layout></Layout>
             <div className="container-fluid row bg-dnger my-5">
                 <div className="left col-lg-10 content ps-5 mx-auto">
 
