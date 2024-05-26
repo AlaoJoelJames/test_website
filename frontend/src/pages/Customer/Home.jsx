@@ -5,8 +5,8 @@ import Footer from "../../components/Footer";
 // import Products from "./Products";
 import ProductItem from "../../components/ProductItem";
 import Layout from "./Layout";
-
-
+import "../../styles/App.css";
+import water from "../../images/water.jpg";
 
 
 function Home(){
@@ -92,7 +92,7 @@ function Home(){
                 <div className="right px-2 mx-md-5">
                     <div className="card mx-3" style={{ border: 'none' }}>
                         <div className="card-image">
-                            <img src="../src/images/water.jpg" className="w-100 img-fluid bg-transparent card-img" style={{ borderRadius: "1em" }} alt="" />
+                            <img src={water} className="w-100 img-fluid bg-transparent card-img" style={{ borderRadius: "1em" }} alt="" />
                         </div>
 
                         <div className="card-badge text-center px-5  py-2 mx-auto text-white fw-medium" style={{ backgroundColor: '#317FAD', borderRadius: '1em' }}>
