@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: backend-oro
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --no-input
+      python manage.py migrate
+    startCommand: python manage.py runserver
+    envVars:
+      - key: SECRET_KEY
+        value: thisisasecretkey
+      - key: DB_HOST
+        value: mysql-37e5e60e-c7da-489a-b574-f193da13d522-db981583389-choreo-o.i.aivencloud.com
+      - key: DB_PORT
+        value: "17407"
+      - key: DB_USER
+        value: avnadmin
+      - key: DB_NAME
+        value: defaultdb
+      - key: DEBUG
+        value: 'False'
+      - key: ALLOWED_HOSTS
+        value: orohiq.vercel.app, backend-oro.onrender.com
