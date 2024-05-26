@@ -22,6 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+if 'PORT' in os.environ:
+    PORT = int(os.environ.get('PORT'))
+else:
+    PORT = 8000  # Default port for local development
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -101,11 +106,11 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'defaultdb',
-        'USER': 'avnadmin',
-        'PASSWORD': 'AVNS_nxpMCDHsFkKrkWLMyVm',
-        'HOST': 'mysql-e6a40deb-f980-4b63-9806-c074948fa01e-orohiq1815194617-cho.i.aivencloud.com',  # This should match the service name in your Docker Compose file
-        'PORT': '26650',  # MariaDB default port
+        'NAME': os.getenv("DB_NAME"),
+        'USER': os.getenv("DB_USER"),
+        'PASSWORD': os.getenv("DB_PWD"),
+        'HOST': "mysql-37e5e60e-c7da-489a-b574-f193da13d522-db981583389-choreo-o.i.aivencloud.com",  # This should match the service name in your Docker Compose file
+        'PORT': os.getenv("DB_PORT"),  # MariaDB default port
         'connect_timeout': 30,
         'read_timeout': 30,
         'write_timeout': 30,
