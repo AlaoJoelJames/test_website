@@ -7,7 +7,7 @@ import ProductItem from "../../components/ProductItem.jsx";
 import React, { useState, useEffect, useRef } from "react";
 import Footer from "../../components/Footer.jsx";
 import { sendMessage } from '../../components/sendMessage';
-
+import Layout from "./Layout.jsx";
 
 function Product_details(){
     const location = useLocation();
@@ -57,6 +57,7 @@ function Product_details(){
 
     return(
         <>
+        <Layout></Layout>
             <div className="container mb-5">
                 <div className="my-5 row pt-4 "style={{borderBottom:"1px solid #143447"}}>
 

@@ -1,13 +1,14 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../../components/Footer";
-
-
+import Layout from "./Layout";
+import service from "../../assets/service.jpg";
 
 function Services(){
 
     return(
         <>
+        <Layout></Layout>
             <div className="container my-5">
                 <div className="row">
                     <div className="col-lg-6 left pt-lg-5">
@@ -25,7 +26,7 @@ function Services(){
 
                             <div className="col mb-4">
                                 <div className="card card-custom card-left h-100 p-md-5">
-                                    <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                    <img src={service} className="card-img-top rounded-5" alt="..." />
                                     <div className="card-body px-lg-4 text-center">
                                         <h3 className="card-title text-center py-4">Water Refilling Station</h3>
                                         <p className="card-text text-sm-center px-md-4 py-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim odio adipisci repellendus voluptas ratione corrupti eos corporis? Ut veniam numquam autem, iure minima earum voluptatum rem distinctio asperiores minus nostrum ex ipsam labore nobis at nesciunt placeat unde non. Deserunt.</p>
@@ -40,7 +41,7 @@ function Services(){
 
                             <div className="col mb-4">
                                 <div className="card card-custom card-left h-100 p-md-5">
-                                    <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                    <img src={service} className="card-img-top rounded-5" alt="..." />
                                     <div className="card-body px-lg-4 text-center">
                                         <h3 className="card-title text-center py-4">Water Refilling Station</h3>
                                         <p className="card-text text-sm-center px-md-4 py-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim odio adipisci repellendus voluptas ratione corrupti eos corporis? Ut veniam numquam autem, iure minima earum voluptatum rem distinctio asperiores minus nostrum ex ipsam labore nobis at nesciunt placeat unde non. Deserunt.</p>
@@ -55,7 +56,7 @@ function Services(){
 
                             <div className="col mb-4">
                                 <div className="card card-custom card-left h-100 p-md-5">
-                                    <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                    <img src={service} className="card-img-top rounded-5" alt="..." />
                                     <div className="card-body px-lg-4 text-center">
                                         <h3 className="card-title text-center py-4">Water Refilling Station</h3>
                                         <p className="card-text text-sm-center px-md-4 py-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim odio adipisci repellendus voluptas ratione corrupti eos corporis? Ut veniam numquam autem, iure minima earum voluptatum rem distinctio asperiores minus nostrum ex ipsam labore nobis at nesciunt placeat unde non. Deserunt.</p>
@@ -87,7 +88,7 @@ function Services(){
                                                     <Link className="btn btn-blue px-5 my-3">Learn More</Link>
                                                 </div>
                                             </div>
-                                            <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                            <img src={service} className="card-img-top rounded-5" alt="..." />
                                         </div>
                                  </div>
 
@@ -102,7 +103,7 @@ function Services(){
                                                     <Link className="btn btn-blue px-5 my-3">Learn More</Link>
                                                 </div>
                                             </div>
-                                            <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                            <img src={service} className="card-img-top rounded-5" alt="..." />
                                         </div>
                                  </div>
 
@@ -117,7 +118,7 @@ function Services(){
                                                     <Link className="btn btn-blue px-5 my-3">Learn More</Link>
                                                 </div>
                                             </div>
-                                            <img src="../src/assets/service.jpg" className="card-img-top rounded-5" alt="..." />
+                                            <img src={service} className="card-img-top rounded-5" alt="..." />
                                         </div>
                                  </div>
 

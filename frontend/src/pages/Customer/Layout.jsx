@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, Route, Routes } from "react-router-dom";
 import React from "react";
 import '../../styles/App.css';
 import logo from "../../assets/logo.png"
@@ -16,7 +16,7 @@ function Layout(){
       };
 
     return(
-        <body>
+        <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary shadow sticky-top fw-bold py-3">
                 <div class="container-fluid d-flex flex">
                     <Link to='/' class="navbar-brand" href="#">
@@ -49,12 +49,8 @@ function Layout(){
                     </div>
                 </div>
             </nav>
-
-            <Outlet/>
-
-
-        </body>
-
+        <Outlet />
+        </div>
     )
 }
 

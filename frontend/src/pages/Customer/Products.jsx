@@ -7,6 +7,7 @@ import filterLogo from "../../assets/filter.png";
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from "../../components/Footer";
 // import api from "../api";
+import Layout from "./Layout.jsx";
 
 
 function Products() {
@@ -50,6 +51,7 @@ function Products() {
 
     return (
         <>
+        <Layout></Layout>
             <div className="container-fluid">
                 <div className="container my-5 shadow p-5 rounded-5">
                     <div className="search-area d-lg-flex justify-content-between my-3 flex-nowrap gap-5">

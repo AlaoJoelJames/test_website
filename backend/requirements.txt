@@ -1,5 +1,5 @@
 asgiref
-Django==3.2.12
+Django==3.2.19
 django-cors-headers
 djangorestframework
 djangorestframework-simplejwt
@@ -8,5 +8,5 @@ pytz
 sqlparse
 psycopg2-binary
 python-dotenv
-mysqlclient==2.1.0
 Pillow
+mysqlclient
